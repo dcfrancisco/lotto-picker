@@ -281,7 +281,7 @@ def main():
             json.dump(results, f, indent=2, default=str)
         print('Results exported to picks_results.json')
     elif args.export == 'csv':
-        import pandas as pd
+        import pandas as pd # type: ignore
         df = pd.DataFrame(results)
         df.to_csv('picks_results.csv', index=False)
         print('Results exported to picks_results.csv')

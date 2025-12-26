@@ -1,2 +1,24 @@
-data/app.db
-data/lotto_history.csv
+
+# Rust: ignore build and backup files
+target/
+**/target/
+*.rs.bk
+
+# Ignore Cargo.lock for libraries (keep for binaries)
+# Cargo.lock
+
+# Ignore all SQLite database files
+*.db
+rust_lotto_analyzer/lotto.db
+
+# Ignore all CSV files except the history file
+*.csv
+
+# Python cache and virtualenvs
+__pycache__/
+*.pyc
+venv/
+
+# macOS and editor files
+.DS_Store
+.vscode/
